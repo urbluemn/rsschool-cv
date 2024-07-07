@@ -1,1 +1,188 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Nick Yaroshko html cv project" >
+    <meta name="keywords" content="HTML, CSS" >
+    <title>Nick Yaroshko's CV</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="shortcut icon" href="../imgs/photo.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="languages">Languages</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#hardskills">Hard Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <div class="myself">
+      <img
+      src="../imgs/photo.jpg"
+      alt="funny photo of myself (actually my cat)"
+      >
+      <section class="name">
+        <h1>Nick Yaroshko</h1>
+        <h3>Full-stack developer</h3>
+      </section>
+    </div>
+    <aside class="generalinfo">
+      <section id="contact">
+        <h2>CONTACTS</h2>
+        <ul>
+          <li class="phonenumber">
+            <p>Phone number: +375 (29) 123-45-67</p>
+          </li>
+          <li class="email">
+            <p>
+              Email:
+              <a href="mailto:nyaroshko1404@gmail.com"
+                >nyaroshko1404@gmail.com</a
+              >
+            </p>
+          </li>
+          <li class="github"><a href="https://github.com/urbluemn">GitHub</a>
+          </li>
+          <li class="linkedin"><a href="http://linkedin.com/in/nickyaroshko">LinkedIn</a>
+          </li>
+          <li class="discord">
+            <p>Discord: @urbluemn</p>
+          </li>
+        </ul>
+      </section>
+      <section id="languages">
+        <h2>LANGUAGES</h2>
+        <ul>
+          <li>Russian - Native</li>
+          <li>English - B2</li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2>EDUCATION</h2>
+        <p>Belarussian National Technical University</p>
+        <p>Belarus, Minsk</p>
+        <p>2018-2020</p>
+      </section>
+    </aside>
+    <aside class="maininfo">
+      <section id="summary">
+        <h2>SUMMARY</h2>
+        <p>
+          Last few years I've been working on a different major. Currently I'm
+          studying and dealing with C# and ASP.Net Core, at the same time I
+          independently learn HTML5, CSS3 and JavaScript to achieve optimal
+          levels of personal performance and accomplishment. I've always worked
+          harmoniously and effectively within a team. I want to study and grow
+          as a software developer. I'm learning rapidly and adapt quickly to
+          changing situations, maintaining an optimistic outlook when I face
+          difficulties.
+        </p>
+      </section>
+      <section id="experience">
+        <h2>EXPERIENCE</h2>
+        <h3>"TeachMeSkills" online school</h3>
+        <h4>.Net Developer (graduate)</h4>
+        <ul>
+          <li>C#, .Net Core, Entity Framework, REST</li>
+          <li>OOP, design patterns</li>
+          <li>
+            SQL, NoSql databases, built with MSSQL and SQLite, used inside own
+            projects.
+          </li>
+          <li>CI/CD, GitHub Actions, Docker, Kubernetes, Azure DevOps</li>
+          <li>
+            Built my own web application, an API with EF Core, an Auth server
+            with IdentityServer4 and .Net Core MVC project as a frontend part.
+          </li>
+        </ul>
+        <h3>"Rolling Scopes" online school</h3>
+        <h4>Web Developer (studying)</h4>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Markdown</li>
+          <li>Git and GitHub</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2>PROJECTS</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/urbluemn/RecipeBook.API">API project</a>
+          </li>
+          <li>
+            <a href="https://github.com/urbluemn/Recipe.Identity"
+              >Authentication server</a
+            >
+          </li>
+          <li>        
+            <a href="https://github.com/urbluemn/Recipe.MVC"
+            >MVC project Recipe Book</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/urbluemn/rsschool-cv">CV project</a>
+          </li>
+        </ul>
+      </section>
+      <section id="code">
+        <h2>CODE</h2>
+        <pre>
+        <code>
+ function persistence(num) {
+    //code me
+    let count = 0;
+    let newArr = (num.toString().split('')).map(Number);
+    if(num.toString().length === 1){
+      return 0;
+    }
+    
+    for(let i = 0; newArr.length > 1; i++){
+      newArr = newArr.reduce((a, b) => a * b).toString().split('').map(Number);
+      count++;
+    }
+      return count;
+ }
+</code>
+            </pre
+          >
+      </section>
+      <section id="hardskills">
+        <h2>SKILLS</h2>
+        <ul>
+          <li>C#</li>
+          <li>.Net Core</li>
+          <li>MSSQL</li>
+          <li>SQLite</li>
+          <li>PostgreSql</li>
+          <li>Design Patterns</li>
+          <li>OOP</li>
+          <li>SOLID Principals</li>
+          <li>Unit testing</li>
+          <li>JavaScript</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Markdown language</li>
+          <li>Git</li>
+          <li>GitHub</li>
+        </ul>
+      </section>
+    </aside>
+    </main>
+    <footer>
+      <img src="../imgs/rs-school-logo.svg" alt="rs-school logo">
+      <a href="https://rs.school/courses/javascript-ru">RS-School frontend course</a>
+      <a href="https://github.com/urbluemn/rsschool-cv">This project GitHub page</a>
+    </footer>
+  </body>
+</html>

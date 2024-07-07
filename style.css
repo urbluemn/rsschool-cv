@@ -132,23 +132,23 @@ h2 {
 }
 
 .phonenumber::before {
-  background-image: url(../imgs/telephone.svg);
+  background-image: url(./imgs/telephone.svg);
 }
 
 .email::before {
-  background-image: url(../imgs/envelope\(1\).svg);
+  background-image: url(./imgs/envelope\(1\).svg);
 }
 
 .github::before {
-  background-image: url(../imgs/github.svg);
+  background-image: url(./imgs/github.svg);
 }
 
 .linkedin::before {
-  background-image: url(../imgs/linkedin\(1\).svg);
+  background-image: url(./imgs/linkedin\(1\).svg);
 }
 
 .discord::before {
-  background-image: url(../imgs/discord.svg);
+  background-image: url(./imgs/discord.svg);
 }
 
 #languages ul {
